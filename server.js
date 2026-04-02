@@ -1,28 +1,25 @@
 const http = require('http');
 const manejarRutas = require('./modules/router');
 
-// Usamos el puerto de Render o el 3000
 const PUERTO = process.env.PORT || 3000;
 
 const servidor = http.createServer((req, res) => {
-    // 1. Respuesta rápida para que Render dé el OK al puerto
-    if (req.method === 'HEAD' || req.url === '/') {
+    // Si Render solo está "asomándose" para ver si el puerto está abierto
+    if (req.method === 'HEAD') {
         res.writeHead(200);
-        res.end();
-        return; 
+        return res.end(); 
     }
 
-    // 2. Si no es la raíz, pasamos el control a tu router
+    // Para todo lo demás (incluido entrar a la web), usamos tu router
     try {
         manejarRutas(req, res);
     } catch (error) {
-        console.error("Error en el router:", error);
+        console.error("Error:", error);
         res.writeHead(500);
-        res.end("Error interno del servidor");
+        res.end("Error en el servidor");
     }
 });
 
-// 3. Escuchamos en el puerto y en 0.0.0.0
 servidor.listen(PUERTO, '0.0.0.0', () => {
-    console.log(`🎸 Servidor DUKI Online en puerto ${PUERTO}`);
+    console.log(`🎸 Fanpage online en puerto ${PUERTO}`);
 });
