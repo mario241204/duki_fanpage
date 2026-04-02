@@ -5,14 +5,12 @@ const manejarRutas = require('./modules/router');
 const PUERTO = process.env.PORT || 3000;
 
 const servidor = http.createServer((req, res) => {
-    manejarRutas(req, res);
-});
+    // Si Render pregunta para ver si estamos vivos (petición HEAD o raíz)
+    if (req.method === 'HEAD' || req.url === '/') {
+        res.writeHead(200);
+        res.end();
+        return; // Detenemos aquí para que no siga a manejarRutas
+    }
 
-// Añadimos '0.0.0.0' para que acepte conexiones externas en el servidor
-servidor.listen(PUERTO, '0.0.0.0', () => {
-    console.log(`
-    🎸 SERVIDOR DE FAN CLUB (DUKI) INICIADO
-    ✔ Puerto activo: ${PUERTO}
-    Escuchando peticiones...
-    `);
+    manejarRutas(req, res);
 });
