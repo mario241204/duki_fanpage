@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Duki Fan Club | Discografía</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/public/css/style.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: { "primary": "#ff3333", "background-dark": "#0a0a0a", "card-dark": "#160808", "border-dark": "#3d1414" },
+                    fontFamily: { "display": ["Spline Sans", "sans-serif"] },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-image: radial-gradient(circle at 50% -20%, #4b2020 0%, #0a0a0a 60%);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-white min-h-screen relative">
+
+    <header
+        class="border-b border-solid border-white/10 px-6 py-4 lg:px-20 bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-[1200px] mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="flex h-10 w-10 items-center justify-center rounded bg-primary text-white">
+                    <span class="material-symbols-outlined !text-3xl">bolt</span>
+                </div>
+                <h2 class="text-white text-xl font-bold tracking-tighter uppercase italic">DUKI</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-white/70 hover:text-primary text-sm font-bold tracking-widest uppercase transition-colors"
+                    href="/">Home</a>
+                <a class="text-white/70 hover:text-primary text-sm font-bold tracking-widest uppercase transition-colors"
+                    href="/historia">Historia</a>
+                <a class="text-white text-sm font-bold border-b-2 border-primary pb-1 tracking-widest uppercase"
+                    href="/discos">Discografía</a>
+                <a class="text-white/70 hover:text-primary text-sm font-bold tracking-widest uppercase transition-colors"
+                    href="/videos">Videos</a>
+                <a class="text-white/70 hover:text-primary text-sm font-bold tracking-widest uppercase transition-colors"
+                    href="/contacto">Contacto</a>
+            </nav>
+            <div class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></div>
+        </div>
+    </header>
+
+    <main class="flex-1 flex flex-col max-w-[1200px] mx-auto w-full px-6 py-8">
+        <div class="mb-10 text-center">
+            <h1 class="text-white text-5xl md:text-7xl font-black tracking-tighter uppercase italic mb-4">
+                DISCO<span class="text-primary italic">GRAFÍA</span>
+            </h1>
+            <p class="text-white/50 max-w-2xl mx-auto uppercase tracking-[0.2em] text-xs">El legado musical del Diablo
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+
+            <div onclick="abrirAlbum('5202')"
+                class="album-card group cursor-pointer bg-card-dark border border-border-dark rounded-xl overflow-hidden relative">
+                <div class="aspect-square relative overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
+                        src="/public/img/5202.jpg" alt="5202">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                        <div
+                            class="bg-primary text-white px-4 py-2 rounded-full font-bold text-xs uppercase tracking-widest">
+                            Ver Tracks</div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-black italic tracking-tight group-hover:text-primary transition-colors">
+                        5202</h3>
+                    <span
+                        class="text-primary font-mono text-xs border border-primary/30 px-2 py-0.5 rounded">2025</span>
+                </div>
+            </div>
+
+            <div onclick="abrirAlbum('ameri')"
+                class="album-card group cursor-pointer bg-card-dark border border-border-dark rounded-xl overflow-hidden relative">
+                <div class="aspect-square relative overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
+                        src="/public/img/ameri.jpg" alt="Ameri">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                        <div
+                            class="bg-primary text-white px-4 py-2 rounded-full font-bold text-xs uppercase tracking-widest">
+                            Ver Tracks</div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-black italic tracking-tight group-hover:text-primary transition-colors">
+                        AMERI</h3>
+                    <span
+                        class="text-primary font-mono text-xs border border-primary/30 px-2 py-0.5 rounded">2024</span>
+                </div>
+            </div>
+
+            <div onclick="abrirAlbum('ada')"
+                class="album-card group cursor-pointer bg-card-dark border border-border-dark rounded-xl overflow-hidden relative">
+                <div class="aspect-square relative overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
+                        src="/public/img/antes_ameri.jpg" alt="Antes de Ameri">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                        <div
+                            class="bg-primary text-white px-4 py-2 rounded-full font-bold text-xs uppercase tracking-widest">
+                            Ver Tracks</div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-black italic tracking-tight group-hover:text-primary transition-colors">
+                        ANTES DE AMERI</h3>
+                    <span
+                        class="text-primary font-mono text-xs border border-primary/30 px-2 py-0.5 rounded">2023</span>
+                </div>
+            </div>
+
+            <div onclick="abrirAlbum('reg2')"
+                class="album-card group cursor-pointer bg-card-dark border border-border-dark rounded-xl overflow-hidden relative">
+                <div class="aspect-square relative overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
+                        src="/public/img/reggaeton2.jpg" alt="Temporada 2">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                        <div
+                            class="bg-primary text-white px-4 py-2 rounded-full font-bold text-xs uppercase tracking-widest">
+                            Ver Tracks</div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-black italic tracking-tight group-hover:text-primary transition-colors">
+                        TEMP. REGGAETÓN 2</h3>
+                    <span
+                        class="text-primary font-mono text-xs border border-primary/30 px-2 py-0.5 rounded">2022</span>
+                </div>
+            </div>
+
+            <div onclick="abrirAlbum('reg1')"
+                class="album-card group cursor-pointer bg-card-dark border border-border-dark rounded-xl overflow-hidden relative">
+                <div class="aspect-square relative overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
+                        src="/public/img/reggaeton.jpg" alt="Temporada 1">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                        <div
+                            class="bg-primary text-white px-4 py-2 rounded-full font-bold text-xs uppercase tracking-widest">
+                            Ver Tracks</div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-black italic tracking-tight group-hover:text-primary transition-colors">
+                        TEMP. REGGAETÓN</h3>
+                    <span
+                        class="text-primary font-mono text-xs border border-primary/30 px-2 py-0.5 rounded">2021</span>
+                </div>
+            </div>
+
+            <div onclick="abrirAlbum('findelmundo')"
+                class="album-card group cursor-pointer bg-card-dark border border-border-dark rounded-xl overflow-hidden relative">
+                <div class="aspect-square relative overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
+                        src="/public/img/fin_del_mundo.jpg" alt="Desde el Fin del Mundo">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                        <div
+                            class="bg-primary text-white px-4 py-2 rounded-full font-bold text-xs uppercase tracking-widest">
+                            Ver Tracks</div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-black italic tracking-tight group-hover:text-primary transition-colors">
+                        DESDE EL FIN DEL MUNDO</h3>
+                    <span
+                        class="text-primary font-mono text-xs border border-primary/30 px-2 py-0.5 rounded">2021</span>
+                </div>
+            </div>
+
+            <div onclick="abrirAlbum('24')"
+                class="album-card group cursor-pointer bg-card-dark border border-border-dark rounded-xl overflow-hidden relative">
+                <div class="aspect-square relative overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
+                        src="/public/img/24.jpg" alt="24">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                        <div
+                            class="bg-primary text-white px-4 py-2 rounded-full font-bold text-xs uppercase tracking-widest">
+                            Ver Tracks</div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-black italic tracking-tight group-hover:text-primary transition-colors">24
+                        (EP)</h3>
+                    <span
+                        class="text-primary font-mono text-xs border border-primary/30 px-2 py-0.5 rounded">2020</span>
+                </div>
+            </div>
+
+            <div onclick="abrirAlbum('ssj')"
+                class="album-card group cursor-pointer bg-card-dark border border-border-dark rounded-xl overflow-hidden relative">
+                <div class="aspect-square relative overflow-hidden">
+                    <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
+                        src="/public/img/ssj.jpg" alt="SSJ">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                        <div
+                            class="bg-primary text-white px-4 py-2 rounded-full font-bold text-xs uppercase tracking-widest">
+                            Ver Tracks</div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-black italic tracking-tight group-hover:text-primary transition-colors">
+                        SUPER SANGRE JOVEN</h3>
+                    <span
+                        class="text-primary font-mono text-xs border border-primary/30 px-2 py-0.5 rounded">2019</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="modalOverlay"
+        class="fixed inset-0 z-[100] bg-black/90 hidden items-center justify-center p-4 md:p-10 backdrop-blur-md">
+        <div
+            class="bg-card-dark w-full max-w-[900px] max-h-[80vh] rounded-2xl border border-primary/40 shadow-[0_0_50px_rgba(255,51,51,0.2)] overflow-hidden flex flex-col md:flex-row relative">
+
+            <button onclick="cerrarModal()"
+                class="absolute top-4 right-4 z-20 text-white hover:text-primary bg-black/50 rounded-full p-2">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+
+            <div class="w-full md:w-2/5 relative h-64 md:h-auto">
+                <img id="modalImg" class="w-full h-full object-cover" src="" alt="Album Cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute bottom-6 left-6">
+                    <h2 id="modalTitle" class="text-3xl font-black italic tracking-tighter mb-1 text-white">TITULO</h2>
+                    <p id="modalYear" class="text-primary font-bold tracking-[0.3em] uppercase text-xs">AÑO</p>
+                </div>
+            </div>
+
+            <div class="flex-1 flex flex-col p-6 md:p-10 bg-background-dark/95 overflow-hidden">
+                <h4
+                    class="text-primary font-bold uppercase tracking-widest text-xs mb-4 border-b border-border-dark pb-2">
+                    Tracklist</h4>
+
+                <div id="modalTracks" class="overflow-y-auto flex-1 pr-2 space-y-2 custom-scrollbar">
+                </div>
+
+                <div class="mt-6">
+                    <button onclick="alert('Abriendo Spotify...')"
+                        class="w-full bg-white text-black font-black uppercase text-sm py-3 rounded-lg hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2 tracking-widest">
+                        <span class="material-symbols-outlined">play_arrow</span> Escuchar en Spotify
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- BASE DE DATOS DE DISCOS ACTUALIZADA ---
+        const discografia = {
+            'ameri': {
+                titulo: 'AMERI',
+                anio: '2024',
+                img: '/public/img/ameri.jpg',
+                tracks: ['Barro', 'Ameri', 'Nueva Era (ft. Myke Towers)', 'Buscarte Lejos', 'Imperio', 'Constelación']
+            },
+            '5202': {
+                titulo: '5202',
+                anio: '2025',
+                img: '/public/img/5202.jpg',
+                tracks: ['Track Exclusivo 1', 'Track Exclusivo 2', 'Track Exclusivo 3', 'Track Exclusivo 4', 'Bonus Track']
+            },
+            'ada': {
+                titulo: 'ANTES DE AMERI',
+                anio: '2023',
+                img: '/public/img/ada.jpg',
+                tracks: ['01 dE ENEro', 'Jefes del Sudoeste', 'Rockstar 2.0', 'Harakiri', 'Apollo 13', 'Don\'t Lie']
+            },
+            'reg2': {
+                titulo: 'TEMP. REGGAETÓN 2',
+                anio: '2022',
+                img: '/public/img/reg2.jpg',
+                tracks: ['Amor de Sobra', 'Esto Recién Empieza', 'Si Quieren Frontear', 'Celosa', 'La Vuelta']
+            },
+            'reg1': {
+                titulo: 'TEMP. REGGAETÓN',
+                anio: '2021',
+                img: '/public/img/reg1.jpg',
+                tracks: ['Ley de Atracción', 'Unfollow', 'Midtown', 'Top 5', 'En Movimiento', 'Bici', 'Yin Yan']
+            },
+            'findelmundo': {
+                titulo: 'DESDE EL FIN DEL MUNDO',
+                anio: '2021',
+                img: '/public/img/findelmundo.jpg',
+                tracks: ['Sudor y Trabajo', 'Chico Estrella', 'Malbec', 'Pintao', 'Cascada', 'Ticket']
+            },
+            '24': {
+                titulo: '24 (EP)',
+                anio: '2020',
+                img: '/public/img/24.jpg',
+                tracks: ['Marca de la Cadena', '24', 'Sin Mirar', 'Vida Eterna', 'Deja Vu']
+            },
+            'ssj': {
+                titulo: 'SUPER SANGRE JOVEN',
+                anio: '2019',
+                img: '/public/img/ssj.jpg',
+                tracks: ['Goteo', 'Te Traje Flores', 'Hitboy', 'Acapella', 'Me Gusta Lo Simple']
+            }
+        };
+
+        const modal = document.getElementById('modalOverlay');
+        const modalImg = document.getElementById('modalImg');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalYear = document.getElementById('modalYear');
+        const modalTracks = document.getElementById('modalTracks');
+
+        function abrirAlbum(clave) {
+            const disco = discografia[clave];
+
+            // 1. Rellenar datos
+            modalImg.src = disco.img;
+            modalTitle.innerText = disco.titulo;
+            modalYear.innerText = disco.anio;
+
+            // 2. Generar lista de canciones
+            modalTracks.innerHTML = ''; // Limpiar anterior
+            disco.tracks.forEach((track, index) => {
+                const num = (index + 1).toString().padStart(2, '0');
+                const html = `
+                    <div class="flex items-center group hover:bg-white/5 p-3 rounded-lg transition-colors cursor-pointer">
+                        <span class="w-8 text-primary font-mono text-sm font-bold">${num}</span>
+                        <div class="flex-1">
+                            <p class="text-white font-bold group-hover:text-primary transition-colors">${track}</p>
+                        </div>
+                        <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100">play_circle</span>
+                    </div>
+                `;
+                modalTracks.innerHTML += html;
+            });
+
+            // 3. Mostrar modal
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function cerrarModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) cerrarModal();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Duki Fan Club | Contacto</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="/public/css/style.css">
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff3333",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#0a0a0a",
+                        "card-dark": "#160808",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Fondo específico para esta página */
+        body {
+            background-image: radial-gradient(circle at 50% -20%, #4b2020 0%, #0a0a0a 60%);
+            background-attachment: fixed;
+            /* Para que el fondo no se mueva al hacer scroll */
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark min-h-screen text-white overflow-x-hidden font-display">
+
+    <div class="layout-container flex h-full grow flex-col">
+
+        <header
+            class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-6 md:px-40 py-4 bg-black/40 backdrop-blur-md sticky top-0 z-50">
+            <div class="flex items-center gap-4 text-white">
+                <div class="size-8 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-4xl">skull</span>
+                </div>
+                <h2 class="text-white text-2xl font-black leading-tight tracking-tighter uppercase italic">DUKI</h2>
+            </div>
+
+            <div class="hidden md:flex flex-1 justify-end gap-8">
+                <div class="flex items-center gap-9">
+                    <a class="text-white/70 hover:text-primary text-sm font-bold leading-normal transition-colors tracking-widest uppercase"
+                        href="/">INICIO</a>
+                    <a class="text-white/70 hover:text-primary text-sm font-bold leading-normal transition-colors tracking-widest uppercase"
+                        href="/historia">HISTORIA</a>
+                    <a class="text-white/70 hover:text-primary text-sm font-bold leading-normal transition-colors tracking-widest uppercase"
+                        href="/discos">DISCOS</a>
+                    <a class="text-white/70 hover:text-primary text-sm font-bold leading-normal transition-colors tracking-widest uppercase"
+                        href="/videos">VIDEOS</a>
+                    <a class="text-white text-sm font-bold leading-normal border-b-2 border-primary pb-1 tracking-widest uppercase"
+                        href="/contacto">CONTACTO</a>
+                </div>
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <span class="material-symbols-outlined text-white">menu</span>
+            </div>
+        </header>
+
+        <main class="flex-1 flex flex-col items-center justify-center px-4 py-12">
+            <div class="max-w-[600px] w-full flex flex-col items-center">
+
+                <div class="mb-2">
+                    <p
+                        class="text-primary text-xs md:text-sm font-black leading-normal tracking-[0.3em] text-center uppercase">
+                        UNITE AL CLAN - MODO DIABLO</p>
+                </div>
+
+                <div class="mb-8">
+                    <h1
+                        class="text-white tracking-tighter text-6xl md:text-8xl font-black leading-none text-center uppercase italic transform -skew-x-6">
+                        CONTACTO</h1>
+                </div>
+
+                <div
+                    class="w-full bg-card-dark/60 backdrop-blur-xl border border-white/10 rounded-xl p-8 shadow-2xl relative overflow-hidden">
+
+                    <div class="absolute -top-24 -right-24 w-48 h-48 bg-primary/10 blur-[80px] rounded-full"></div>
+                    <div class="absolute -bottom-24 -left-24 w-48 h-48 bg-primary/5 blur-[80px] rounded-full"></div>
+
+                    <form action="/enviar-mensaje" method="POST" class="space-y-6 relative z-10">
+
+                        <div class="flex flex-col gap-2">
+                            <label class="text-white/60 text-xs font-bold tracking-widest uppercase px-1">Nombre /
+                                A.K.A.</label>
+                            <input name="nombre"
+                                class="form-input flex w-full rounded-lg text-white focus:outline-0 focus:ring-1 focus:ring-primary border border-white/10 bg-black/40 focus:border-primary h-14 placeholder:text-white/20 px-4 text-base font-normal leading-normal transition-all input-glow"
+                                placeholder="¿Cómo te llaman en la calle?" type="text" required />
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label class="text-white/60 text-xs font-bold tracking-widest uppercase px-1">Email</label>
+                            <input name="email"
+                                class="form-input flex w-full rounded-lg text-white focus:outline-0 focus:ring-1 focus:ring-primary border border-white/10 bg-black/40 focus:border-primary h-14 placeholder:text-white/20 px-4 text-base font-normal leading-normal transition-all input-glow"
+                                placeholder="tu@email.com" type="email" required />
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label
+                                class="text-white/60 text-xs font-bold tracking-widest uppercase px-1">Mensaje</label>
+                            <textarea name="mensaje"
+                                class="form-input flex w-full rounded-lg text-white focus:outline-0 focus:ring-1 focus:ring-primary border border-white/10 bg-black/40 focus:border-primary placeholder:text-white/20 px-4 py-3 text-base font-normal leading-normal transition-all input-glow resize-none"
+                                placeholder="Dejá tu mensaje para el equipo SSJ..." rows="4" required></textarea>
+                        </div>
+
+                        <div class="pt-4">
+                            <button
+                                class="w-full py-5 bg-primary text-white font-black text-xl tracking-[0.2em] uppercase italic rounded-lg glow-button flex items-center justify-center gap-3"
+                                type="submit">
+                                ENVIAR
+                                <span class="material-symbols-outlined font-black">send</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="mt-12 flex flex-col items-center gap-4">
+                    <div class="flex items-center gap-6 opacity-40">
+                        <span class="text-2xl font-black italic">SSJ</span>
+                        <div class="w-1 h-1 bg-white rounded-full"></div>
+                        <span class="text-2xl font-black italic tracking-tighter">666</span>
+                        <div class="w-1 h-1 bg-white rounded-full"></div>
+                        <span class="text-2xl font-black italic">ADA</span>
+                    </div>
+                    <p class="text-white/20 text-[10px] tracking-[0.5em] uppercase">Super Sangre Joven World Tour 2024
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <div class="fixed top-1/2 -left-20 -translate-y-1/2 opacity-[0.03] pointer-events-none select-none -z-10">
+            <h2 class="text-[300px] font-black italic transform -rotate-90 text-white">MODO</h2>
+        </div>
+        <div class="fixed top-1/2 -right-20 -translate-y-1/2 opacity-[0.03] pointer-events-none select-none -z-10">
+            <h2 class="text-[300px] font-black italic transform rotate-90 text-white">DIABLO</h2>
+        </div>
+
+    </div>
+</body>
+
+</html>

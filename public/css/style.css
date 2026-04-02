@@ -1,0 +1,96 @@
+/* --- EFECTOS ESPECIALES MODO DIABLO --- */
+
+.red-glow {
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.4);
+    transition: box-shadow 0.3s ease;
+}
+
+.red-glow:hover {
+    box-shadow: 0 0 25px rgba(255, 51, 51, 0.7);
+}
+
+.text-glow {
+    text-shadow: 0 0 10px rgba(255, 51, 51, 0.5);
+}
+
+.grain-overlay {
+    /* Si tienes una imagen de ruido/grano, ponla aquí, si no, un color semi-transparente */
+    background-color: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+}
+
+/* Ajustes para scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- ESTILOS DE HISTORIA (TIMELINE) --- */
+
+.timeline-line {
+    background: linear-gradient(180deg, #ff3333 0%, #6b0000 100%);
+    box-shadow: 0 0 15px #ff3333;
+}
+
+.glow-red {
+    box-shadow: 0 0 20px rgba(255, 51, 51, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glow-red:hover {
+    box-shadow: 0 0 30px rgba(255, 51, 51, 0.6);
+    transform: scale(1.02);
+}
+
+.text-glow-red {
+    text-shadow: 0 0 15px rgba(255, 51, 51, 0.8);
+}
+
+
+/* --- ESTILOS DISCOGRAFÍA --- */
+
+.album-card {
+    transition: all 0.3s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 51, 51, 0.4);
+    border-color: #ff3333;
+}
+
+/* Scrollbar personalizada para la lista de canciones */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #ff3333;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #cc0000;
+}
+
+
+
+/* --- ESTILOS CONTACTO --- */
+.glow-button {
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.4), 0 0 30px rgba(255, 51, 51, 0.2);
+    transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 25px rgba(255, 51, 51, 0.7), 0 0 50px rgba(255, 51, 51, 0.4);
+    transform: scale(1.02);
+}
+
+.input-glow:focus {
+    box-shadow: 0 0 10px rgba(255, 51, 51, 0.2);
+    border-color: #ff3333;
+    outline: none;
+}

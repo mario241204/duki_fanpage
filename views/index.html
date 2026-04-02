@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Duki Fan Club | Home</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="/public/css/style.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff3333",
+                        "background-dark": "#0a0a0a",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-dark font-display text-white selection:bg-primary selection:text-white">
+
+    <div class="relative flex min-h-screen flex-col overflow-x-hidden">
+
+        <header class="fixed top-0 z-50 w-full border-b border-white/10 bg-background-dark/80 backdrop-blur-md">
+            <div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
+                <div class="flex items-center gap-3">
+                    <div class="flex h-10 w-10 items-center justify-center rounded bg-primary text-white">
+                        <span class="material-symbols-outlined !text-3xl">bolt</span>
+                    </div>
+                    <h2 class="text-xl font-black tracking-tighter uppercase italic">Duki Fan Club</h2>
+                </div>
+
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-bold uppercase tracking-widest text-primary transition-colors hover:text-white"
+                        href="/">Home</a>
+                    <a class="text-sm font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-primary"
+                        href="/historia">Historia</a>
+                    <a class="text-sm font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-primary"
+                        href="/discos">Discos</a>
+                    <a class="text-sm font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-primary"
+                        href="/videos">Videos</a>
+                    <a class="text-sm font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-primary"
+                        href="/contacto">Contacto</a>
+                </nav>
+
+                <div class="flex md:hidden text-white">
+                    <span class="material-symbols-outlined">menu</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1">
+
+            <section class="relative flex min-h-screen items-center justify-center overflow-hidden pt-20">
+                <div class="absolute inset-0 z-0 bg-cover bg-center"
+                    style='background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.4) 0%, rgba(10, 10, 10, 1) 100%), url("/public/img/duki_home.jpg");'>
+                </div>
+
+                <div class="grain-overlay absolute inset-0 z-[1]"></div>
+
+                <div class="relative z-10 flex w-full max-w-[1200px] flex-col items-center px-6 text-center">
+                    <span class="mb-4 text-xs font-black uppercase tracking-[0.5em] text-primary text-glow">Modo Diablo
+                        Oficial</span>
+                    <h1
+                        class="mb-6 text-6xl font-black uppercase leading-none tracking-tighter md:text-8xl lg:text-9xl italic">
+                        FAN CLUB <br /> <span class="text-primary">OFICIAL</span>
+                    </h1>
+                    <p class="mb-10 max-w-xl text-lg font-light leading-relaxed text-white/80 md:text-xl">
+                        Sigue los pasos de El Jefe del Trap. Vive la experiencia exclusiva del artista número uno de
+                        Argentina.
+                    </p>
+                    <div class="flex flex-col gap-4 sm:flex-row">
+                        <a href="/historia"
+                            class="red-glow flex h-14 min-w-[200px] items-center justify-center rounded bg-primary px-8 text-base font-black uppercase tracking-widest text-white transition-all hover:scale-105 active:scale-95">
+                            Ver Historia
+                        </a>
+                        <a href="/discos"
+                            class="flex h-14 min-w-[200px] items-center justify-center rounded border-2 border-white/20 bg-white/5 px-8 text-base font-black uppercase tracking-widest text-white backdrop-blur-sm transition-all hover:bg-white/10 hover:border-white/40 active:scale-95">
+                            Escuchar Música
+                        </a>
+                    </div>
+                </div>
+
+                <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+                    <span class="material-symbols-outlined text-primary !text-4xl">expand_more</span>
+                </div>
+            </section>
+
+            <section class="bg-background-dark py-20">
+                <div class="mx-auto max-w-[1200px] px-6">
+                    <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+                        <div
+                            class="flex flex-col gap-2 rounded-xl border border-white/5 bg-white/5 p-8 backdrop-blur-sm transition-all hover:border-primary/30">
+                            <p class="text-sm font-black uppercase tracking-widest text-white/50">Oyentes Mensuales</p>
+                            <p class="text-4xl font-black italic text-white">25.4M</p>
+                            <div class="flex items-center gap-2 text-green-500">
+                                <span class="material-symbols-outlined text-sm">trending_up</span>
+                                <span class="text-sm font-bold">+15% este mes</span>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col gap-2 rounded-xl border border-white/5 bg-white/5 p-8 backdrop-blur-sm transition-all hover:border-primary/30">
+                            <p class="text-sm font-black uppercase tracking-widest text-white/50">Seguidores</p>
+                            <p class="text-4xl font-black italic text-white">12.8M</p>
+                            <div class="flex items-center gap-2 text-green-500">
+                                <span class="material-symbols-outlined text-sm">trending_up</span>
+                                <span class="text-sm font-bold">+8.2% este mes</span>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col gap-2 rounded-xl border border-white/5 bg-white/5 p-8 backdrop-blur-sm transition-all hover:border-primary/30">
+                            <p class="text-sm font-black uppercase tracking-widest text-white/50">Shows Realizados</p>
+                            <p class="text-4xl font-black italic text-white">580+</p>
+                            <div class="flex items-center gap-2 text-primary">
+                                <span class="material-symbols-outlined text-sm">workspace_premium</span>
+                                <span class="text-sm font-bold">Sold Out mundial</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-background-dark py-20">
+                <div class="mx-auto max-w-[1200px] px-6">
+                    <div class="mb-16 flex flex-col items-start gap-4">
+                        <h2 class="text-4xl font-black uppercase tracking-tighter italic md:text-6xl">
+                            MODO <span class="text-primary">DIABLO</span>
+                        </h2>
+                        <div class="h-1 w-24 bg-primary"></div>
+                        <p class="max-w-2xl text-lg font-light text-white/60">
+                            Explora el universo de Duki, desde sus inicios en el Quinto Escalón hasta conquistar
+                            estadios mundiales como el Bernabéu y River Plate.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+
+                        <div
+                            class="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 transition-all hover:-translate-y-2 hover:border-primary/50">
+                            <div class="aspect-[16/9] w-full overflow-hidden">
+                                <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                    style='background-image: url("/public/img/ssj.jpg");'></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="mb-2 text-xl font-black uppercase italic tracking-tight">Discografía</h3>
+                                <p class="mb-4 text-sm font-light text-white/60">Escucha Ameri, SSJ y todos los clásicos
+                                    que marcaron una era.</p>
+                                <a class="flex items-center gap-2 text-sm font-black uppercase tracking-widest text-primary hover:underline"
+                                    href="/discos">
+                                    Ver discografía <span
+                                        class="material-symbols-outlined !text-sm">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div
+                            class="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 transition-all hover:-translate-y-2 hover:border-primary/50">
+                            <div class="aspect-[16/9] w-full overflow-hidden">
+                                <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                    style='background-image: url("/public/img/goteo.jpg");'></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="mb-2 text-xl font-black uppercase italic tracking-tight">Videos Clips</h3>
+                                <p class="mb-4 text-sm font-light text-white/60">Videoclips oficiales y contenido
+                                    exclusivo en tu servidor.</p>
+                                <a class="flex items-center gap-2 text-sm font-black uppercase tracking-widest text-primary hover:underline"
+                                    href="/videos">
+                                    Ver contenido <span class="material-symbols-outlined !text-sm">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div
+                            class="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 transition-all hover:-translate-y-2 hover:border-primary/50">
+                            <div class="aspect-[16/9] w-full overflow-hidden">
+                                <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                    style='background-image: url("/public/img/duki_face.jpg");'></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="mb-2 text-xl font-black uppercase italic tracking-tight">Comunidad</h3>
+                                <p class="mb-4 text-sm font-light text-white/60">Contacta con el equipo y entérate de
+                                    las novedades.</p>
+                                <a class="flex items-center gap-2 text-sm font-black uppercase tracking-widest text-primary hover:underline"
+                                    href="/contacto">
+                                    Contactar <span class="material-symbols-outlined !text-sm">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="relative py-32 overflow-hidden">
+                <div class="absolute inset-0 z-0 bg-cover bg-fixed bg-center"
+                    style='background-image: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)), url("/public/img/duki_home.jpg");'>
+                </div>
+                <div class="relative z-10 mx-auto max-w-[1200px] px-6 text-center">
+                    <h2 class="mb-6 text-4xl font-black uppercase italic tracking-tighter md:text-6xl">
+                        ¿LISTO PARA EL <span class="text-primary">MODO DIABLO?</span>
+                    </h2>
+                    <p class="mx-auto mb-10 max-w-xl text-lg font-light text-white/70">
+                        Únete a la comunidad oficial y recibe noticias, preventas y beneficios exclusivos antes que
+                        nadie.
+                    </p>
+                    <div class="flex justify-center">
+                        <a href="/contacto"
+                            class="red-glow group relative flex h-16 min-w-[280px] items-center justify-center overflow-hidden rounded bg-primary text-lg font-black uppercase tracking-widest text-white transition-all active:scale-95">
+                            <span class="relative z-10">CONTACTAR EQUIPO</span>
+                            <div
+                                class="absolute inset-0 translate-y-full bg-white/10 transition-transform duration-300 group-hover:translate-y-0">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="border-t border-white/5 bg-background-dark py-12">
+            <div class="mx-auto max-w-[1200px] px-6">
+                <div class="flex flex-col items-center justify-between gap-8 md:flex-row">
+                    <div class="flex items-center gap-3">
+                        <div class="flex h-8 w-8 items-center justify-center rounded bg-primary text-white">
+                            <span class="material-symbols-outlined !text-xl">bolt</span>
+                        </div>
+                        <h2 class="text-lg font-black tracking-tighter uppercase italic">Duki Fan Club</h2>
+                    </div>
+                    <p class="text-xs font-medium uppercase tracking-widest text-white/30">
+                        © 2024 MODO DIABLO S.A.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

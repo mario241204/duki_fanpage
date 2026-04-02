@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Duki Fan Club | Historia</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="/public/css/style.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff3333",
+                        "background-dark": "#0a0a0a",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300">
+
+    <header
+        class="sticky top-0 z-50 w-full border-b border-white/10 bg-background-dark/80 backdrop-blur-md px-6 md:px-20 py-4">
+        <div class="max-w-[1200px] mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="flex h-10 w-10 items-center justify-center rounded bg-primary text-white">
+                    <span class="material-symbols-outlined !text-3xl">bolt</span>
+                </div>
+                <h1 class="text-xl font-bold tracking-tighter uppercase italic">Duki Fan Club</h1>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="/">Home</a>
+                <a class="text-sm font-bold uppercase tracking-widest text-primary border-b-2 border-primary pb-1"
+                    href="/historia">Historia</a>
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="/discos">Discos</a>
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="/videos">Videos</a>
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="/contacto">Contacto</a>
+            </nav>
+
+            <div class="flex md:hidden text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative min-h-screen overflow-hidden">
+
+        <section class="relative pt-20 pb-10 px-6 text-center">
+            <div
+                class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent opacity-50">
+            </div>
+            <div class="max-w-4xl mx-auto relative z-10">
+                <h2
+                    class="text-5xl md:text-8xl font-black italic tracking-tighter uppercase text-glow-red leading-none mb-6">
+                    Cronología de un Rey
+                </h2>
+                <p class="text-gray-400 max-w-xl mx-auto text-lg uppercase tracking-tight">
+                    Desde las plazas de Buenos Aires hasta los estadios del mundo. Este es el camino del Diablo.
+                </p>
+            </div>
+        </section>
+
+        <section class="relative max-w-[1200px] mx-auto py-20 px-6">
+
+            <div
+                class="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-[2px] timeline-line hidden md:block">
+            </div>
+
+            <div class="relative flex flex-col md:flex-row items-center justify-between mb-32 group">
+                <div class="w-full md:w-[45%] mb-8 md:mb-0">
+                    <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/5 glow-red">
+                        <div class="aspect-video bg-cover bg-center"
+                            style='background-image: url("/public/img/historia_quinto.jpg");'></div>
+                        <div class="p-6">
+                            <span class="text-primary font-bold text-sm tracking-[0.2em] uppercase">2016 - 2017</span>
+                            <h3 class="text-3xl font-black italic uppercase mt-2 mb-4">El Quinto Escalón</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Donde todo empezó. La plaza Rivadavia vio nacer a Mauro Lombardo como Duki. Su victoria
+                                frente a Nacho marcó un antes y un después. De aquí surgió su primer hit histórico:
+                                <span class="text-white italic">'No Vendo Trap'</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary z-20 shadow-[0_0_15px_#ff3333] border-4 border-black hidden md:block">
+                </div>
+                <div class="w-full md:w-[45%]"></div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row-reverse items-center justify-between mb-32 group">
+                <div class="w-full md:w-[45%] mb-8 md:mb-0">
+                    <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/5 glow-red">
+                        <div class="aspect-video bg-cover bg-center"
+                            style='background-image: url("/public/img/historia_mododiablo.jpg");'></div>
+                        <div class="p-6">
+                            <span class="text-primary font-bold text-sm tracking-[0.2em] uppercase">2018 - 2020</span>
+                            <h3 class="text-3xl font-black italic uppercase mt-2 mb-4">Modo Diablo</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                La explosión global. Junto a YSY A y Neo Pistea. Mansión, giras agotadas y el nacimiento
+                                del <span class="text-white italic">"SKERE"</span>. La era que puso al trap argentino en
+                                el mapa mundial.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary z-20 shadow-[0_0_15px_#ff3333] border-4 border-black hidden md:block">
+                </div>
+                <div class="w-full md:w-[45%]"></div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row items-center justify-between group">
+                <div class="w-full md:w-[45%] mb-8 md:mb-0">
+                    <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/5 glow-red">
+                        <div class="aspect-video bg-cover bg-center"
+                            style='background-image: url("/public/img/historia_estadio.jpg");'></div>
+                        <div class="p-6">
+                            <span class="text-primary font-bold text-sm tracking-[0.2em] uppercase">2021 -
+                                Actualidad</span>
+                            <h3 class="text-3xl font-black italic uppercase mt-2 mb-4">Dominio Global</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                El ascenso a la inmortalidad. 4 estadios Vélez, 2 River Plate y el histórico Santiago
+                                Bernabéu. Duki dejó de ser un rapero para convertirse en un icono cultural.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary z-20 shadow-[0_0_15px_#ff3333] border-4 border-black hidden md:block">
+                </div>
+                <div class="w-full md:w-[45%]"></div>
+            </div>
+
+        </section>
+
+        <section class="py-32 px-6 text-center relative overflow-hidden">
+            <div class="max-w-2xl mx-auto relative z-10">
+                <h4 class="text-3xl font-black italic uppercase mb-6 tracking-tight">Revive sus mejores temas</h4>
+                <p class="text-gray-400 mb-10">Desde She Don't Give a FO hasta Ameri. Escucha la discografía completa.
+                </p>
+                <a href="/discos"
+                    class="bg-primary hover:bg-red-700 text-white px-10 py-4 rounded-full font-black uppercase text-sm tracking-[0.2em] transition-all shadow-[0_0_20px_rgba(255,51,51,0.5)] hover:scale-105">
+                    Ir a Discografía
+                </a>
+            </div>
+            <div class="absolute bottom-0 left-0 w-full opacity-5 select-none pointer-events-none">
+                <span
+                    class="text-[15rem] md:text-[20rem] font-black italic uppercase leading-none whitespace-nowrap block translate-y-1/3 text-white">MODO
+                    DIABLO</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-black py-12 px-6 border-t border-white/10">
+        <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div class="flex h-8 w-8 items-center justify-center rounded bg-primary text-white">
+                    <span class="material-symbols-outlined !text-xl">bolt</span>
+                </div>
+                <span class="font-bold uppercase tracking-widest text-sm text-white">Duki Fan Club © 2024</span>
+            </div>
+            <p class="text-xs font-medium uppercase tracking-widest text-white/30">
+                MODO DIABLO S.A.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

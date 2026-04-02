@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Duki Fan Club | Videos</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/public/css/style.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: { "primary": "#ff3333", "background-dark": "#0a0505", "surface-dark": "#1a0b0b" },
+                    fontFamily: { "display": ["Spline Sans", "sans-serif"] },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Scrollbar roja personalizada */
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #1a0b0b;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #ff3333;
+            border-radius: 10px;
+        }
+
+        /* Ocultar controles nativos en los clips de bucle para estilo limpio */
+        .clip-video::-webkit-media-controls {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-white transition-colors duration-300">
+
+    <header
+        class="sticky top-0 z-50 w-full bg-background-dark/95 backdrop-blur-md border-b border-white/10 px-4 lg:px-20 py-3">
+        <div class="max-w-[1280px] mx-auto flex items-center justify-between gap-4">
+            <div class="flex items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="text-primary flex items-center justify-center bg-white/10 rounded p-1">
+                        <span class="material-symbols-outlined">bolt</span>
+                    </div>
+                    <h2 class="text-xl font-black uppercase tracking-tighter hidden md:block italic">DUKI</h2>
+                </div>
+                <nav class="hidden lg:flex items-center gap-6">
+                    <a class="text-sm font-bold uppercase tracking-widest text-white/70 hover:text-primary transition-colors"
+                        href="/">Home</a>
+                    <a class="text-sm font-bold uppercase tracking-widest text-white/70 hover:text-primary transition-colors"
+                        href="/historia">Historia</a>
+                    <a class="text-sm font-bold uppercase tracking-widest text-white/70 hover:text-primary transition-colors"
+                        href="/discos">Discos</a>
+                    <a class="text-sm font-bold uppercase tracking-widest text-primary border-b-2 border-primary"
+                        href="/videos">Videos</a>
+                    <a class="text-sm font-bold uppercase tracking-widest text-white/70 hover:text-primary transition-colors"
+                        href="/contacto">Contacto</a>
+                </nav>
+            </div>
+            <div class="flex flex-1 justify-end items-center gap-4">
+                <button
+                    class="bg-primary hover:bg-red-700 text-white text-xs font-black uppercase px-6 py-2.5 rounded-lg shadow-[0_0_15px_rgba(255,51,51,0.4)] transition-all flex items-center gap-2">
+                    <span class="material-symbols-outlined text-sm">play_arrow</span> Modo Diablo
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-[1280px] mx-auto px-4 lg:px-20 py-8">
+
+        <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-10">
+            <div class="max-w-2xl">
+                <h1
+                    class="text-5xl md:text-7xl font-black italic uppercase leading-none tracking-tighter mb-4 text-white">
+                    VIDEOS <span class="text-primary">&</span> CLIPS
+                </h1>
+                <p class="text-gray-400 text-lg">
+                    La videoteca oficial. Desde los cyphers en la plaza hasta los estadios mundiales.
+                </p>
+            </div>
+        </div>
+
+        <section class="mb-12">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold uppercase tracking-tight flex items-center gap-2 text-white">
+                    <span class="w-2 h-8 bg-primary rounded-full"></span>
+                    CLIPS DESTACADOS (LOOPS)
+                </h2>
+            </div>
+
+            <div class="flex overflow-x-auto gap-4 pb-6 custom-scrollbar snap-x">
+
+                <div class="min-w-[280px] md:min-w-[320px] group cursor-pointer snap-start">
+                    <div
+                        class="relative aspect-video rounded-xl overflow-hidden border-2 border-transparent group-hover:border-primary transition-all bg-surface-dark">
+                        <video class="w-full h-full object-cover clip-video" muted loop playsinline data-start="50"
+                            data-end="65" onmouseover="this.play()" onmouseout="this.pause()">
+                            <source src="/public/videos/goteo.mp4" type="video/mp4">
+                        </video>
+                        <div
+                            class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/50 to-transparent pointer-events-none">
+                            <p class="text-white text-sm font-bold leading-tight">GOTEO (HOOK)</p>
+                            <span class="text-primary text-xs font-bold">Bucle 15s</span>
+                        </div>
+                        <div
+                            class="absolute top-2 right-2 bg-primary text-white text-[10px] font-black px-2 py-0.5 rounded">
+                            LOOP</div>
+                    </div>
+                </div>
+
+                <div class="min-w-[280px] md:min-w-[320px] group cursor-pointer snap-start">
+                    <div
+                        class="relative aspect-video rounded-xl overflow-hidden border-2 border-transparent group-hover:border-primary transition-all bg-surface-dark">
+                        <video class="w-full h-full object-cover clip-video" muted loop playsinline data-start="65"
+                            data-end="80" onmouseover="this.play()" onmouseout="this.pause()">
+                            <source src="/public/videos/she.mp4" type="video/mp4">
+                        </video>
+                        <div
+                            class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/50 to-transparent pointer-events-none">
+                            <p class="text-white text-sm font-bold leading-tight">SHE DON'T GIVE A FO</p>
+                            <span class="text-primary text-xs font-bold">Bucle 15s</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min-w-[280px] md:min-w-[320px] group cursor-pointer snap-start">
+                    <div
+                        class="relative aspect-video rounded-xl overflow-hidden border-2 border-transparent group-hover:border-primary transition-all bg-surface-dark">
+                        <video class="w-full h-full object-cover clip-video" muted loop playsinline data-start="70"
+                            data-end="85" onmouseover="this.play()" onmouseout="this.pause()">
+                            <source src="/public/videos/givenchy.mp4" type="video/mp4">
+                        </video>
+                        <div
+                            class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/50 to-transparent pointer-events-none">
+                            <p class="text-white text-sm font-bold leading-tight">GIVENCHY (VUELVO AL TRAP)</p>
+                            <span class="text-primary text-xs font-bold">Bucle 15s</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min-w-[280px] md:min-w-[320px] group cursor-pointer snap-start">
+                    <div
+                        class="relative aspect-video rounded-xl overflow-hidden border-2 border-transparent group-hover:border-primary transition-all bg-surface-dark">
+                        <video class="w-full h-full object-cover clip-video" muted loop playsinline data-start="45"
+                            data-end="60" onmouseover="this.play()" onmouseout="this.pause()">
+                            <source src="/public/videos/malbec.mp4" type="video/mp4">
+                        </video>
+                        <div
+                            class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/50 to-transparent pointer-events-none">
+                            <p class="text-white text-sm font-bold leading-tight">MALBEC</p>
+                            <span class="text-primary text-xs font-bold">Bucle 15s</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="flex items-center gap-4 mb-8">
+            <h2 class="text-2xl font-bold uppercase tracking-tight text-white">VIDEOS COMPLETOS</h2>
+            <div class="h-[1px] flex-1 bg-white/10"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+            <div class="flex flex-col gap-4 group">
+                <div
+                    class="relative aspect-video rounded-xl overflow-hidden bg-surface-dark group-hover:ring-2 ring-primary transition-all shadow-2xl">
+                    <video class="w-full h-full object-cover" controls poster="/public/img/video_goteo.jpg">
+                        <source src="/public/videos/goteo.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <h3
+                        class="text-xl font-black uppercase italic tracking-tight text-white group-hover:text-primary transition-colors">
+                        GOTEO</h3>
+                    <div class="flex items-center gap-3 mt-1 text-sm text-gray-500 font-bold">
+                        <span>2019</span> <span class="size-1 bg-gray-600 rounded-full"></span> <span>SSJ Records</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 group">
+                <div
+                    class="relative aspect-video rounded-xl overflow-hidden bg-surface-dark group-hover:ring-2 ring-primary transition-all shadow-2xl">
+                    <video class="w-full h-full object-cover" controls poster="/public/img/video_givenchy.jpg">
+                        <source src="/public/videos/givenchy.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <h3
+                        class="text-xl font-black uppercase italic tracking-tight text-white group-hover:text-primary transition-colors">
+                        GIVENCHY</h3>
+                    <div class="flex items-center gap-3 mt-1 text-sm text-gray-500 font-bold">
+                        <span>2022</span> <span class="size-1 bg-gray-600 rounded-full"></span> <span>Temporada de
+                            Reggaetón 2</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 group">
+                <div
+                    class="relative aspect-video rounded-xl overflow-hidden bg-surface-dark group-hover:ring-2 ring-primary transition-all shadow-2xl">
+                    <video class="w-full h-full object-cover" controls poster="/public/img/video_she.jpg">
+                        <source src="/public/videos/she.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <h3
+                        class="text-xl font-black uppercase italic tracking-tight text-white group-hover:text-primary transition-colors">
+                        SHE DON'T GIVE A FO</h3>
+                    <div class="flex items-center gap-3 mt-1 text-sm text-gray-500 font-bold">
+                        <span>2017</span> <span class="size-1 bg-gray-600 rounded-full"></span> <span>ft. Khea</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 group">
+                <div
+                    class="relative aspect-video rounded-xl overflow-hidden bg-surface-dark group-hover:ring-2 ring-primary transition-all shadow-2xl">
+                    <video class="w-full h-full object-cover" controls>
+                        <source src="/public/videos/malbec.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <h3
+                        class="text-xl font-black uppercase italic tracking-tight text-white group-hover:text-primary transition-colors">
+                        MALBEC</h3>
+                    <div class="flex items-center gap-3 mt-1 text-sm text-gray-500 font-bold">
+                        <span>2021</span> <span class="size-1 bg-gray-600 rounded-full"></span> <span>ft.
+                            Bizarrap</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 group">
+                <div
+                    class="relative aspect-video rounded-xl overflow-hidden bg-surface-dark group-hover:ring-2 ring-primary transition-all shadow-2xl">
+                    <video class="w-full h-full object-cover" controls>
+                        <source src="/public/videos/quavo.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <h3
+                        class="text-xl font-black uppercase italic tracking-tight text-white group-hover:text-primary transition-colors">
+                        QUAVO #ModoDiablo</h3>
+                    <div class="flex items-center gap-3 mt-1 text-sm text-gray-500 font-bold">
+                        <span>2018</span> <span class="size-1 bg-gray-600 rounded-full"></span> <span>La Mansión</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 group">
+                <div
+                    class="relative aspect-video rounded-xl overflow-hidden bg-surface-dark group-hover:ring-2 ring-primary transition-all shadow-2xl">
+                    <video class="w-full h-full object-cover" controls>
+                        <source src="/public/videos/barro.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <h3
+                        class="text-xl font-black uppercase italic tracking-tight text-white group-hover:text-primary transition-colors">
+                        BARRO</h3>
+                    <div class="flex items-center gap-3 mt-1 text-sm text-gray-500 font-bold">
+                        <span>2024</span> <span class="size-1 bg-gray-600 rounded-full"></span> <span>Ameri Intro</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-center mt-16">
+            <div class="group flex flex-col items-center gap-2 text-white/50">
+                <span
+                    class="text-xs font-black uppercase tracking-widest group-hover:text-primary transition-colors">MÁS
+                    CONTENIDO PRONTO</span>
+                <span class="material-symbols-outlined text-primary">keyboard_arrow_down</span>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="mt-20 border-t border-white/10 bg-surface-dark py-12 px-4 lg:px-20">
+        <div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex flex-col gap-2 text-center md:text-left">
+                <div
+                    class="flex items-center justify-center md:justify-start gap-2 text-primary font-black italic tracking-tighter">
+                    <span class="material-symbols-outlined text-lg">bolt</span>
+                    DUKI FAN CLUB
+                </div>
+                <p class="text-white/30 text-xs uppercase tracking-widest">© 2024 Duki. Todos los derechos reservados.
+                </p>
+            </div>
+            <div class="flex gap-6">
+                <a class="text-white/50 hover:text-primary transition-colors" href="#"><span
+                        class="material-symbols-outlined text-2xl">public</span></a>
+                <a class="text-white/50 hover:text-primary transition-colors" href="#"><span
+                        class="material-symbols-outlined text-2xl">smart_display</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Configura los clips del carrusel para que hagan loop en la sección deseada
+        document.addEventListener('DOMContentLoaded', () => {
+            const clips = document.querySelectorAll('.clip-video');
+
+            clips.forEach(video => {
+                const start = parseFloat(video.dataset.start);
+                const end = parseFloat(video.dataset.end);
+
+                // Al cargar, ir al inicio del clip
+                video.currentTime = start;
+
+                video.addEventListener('timeupdate', () => {
+                    if (video.currentTime >= end) {
+                        video.currentTime = start;
+                        video.play();
+                    }
+                });
+
+                // Truco: Al pasar el mouse hace play, al quitarlo pausa y resetea
+                video.parentElement.addEventListener('mouseenter', () => video.play());
+                video.parentElement.addEventListener('mouseleave', () => {
+                    video.pause();
+                    video.currentTime = start; // Volver al inicio del clip
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
